@@ -1,6 +1,10 @@
 image: 
   file: .gitpod.Dockerfile
 
+tasks:
+  - init: dotnet restore
+    command: dotnet clean && dotnet build
+
 vscode:
   extensions:
     - ms-vscode.csharp@1.21.12:kw8SkO8+aVTSFug281WfQQ==
