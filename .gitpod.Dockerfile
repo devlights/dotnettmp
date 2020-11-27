@@ -9,3 +9,6 @@ RUN sudo apt-get update \
     && sudo apt-get install -y dotnet-sdk-5.0 \
     && sudo apt-get install -y dotnet-runtime-5.0 \
     && sudo rm -rf /var/lib/apt/lists/*
+
+# installed the dotnet packages from apt command, so clear the DOTNET_ROOT environment variable. 
+ENV DOTNET_ROOT=
