@@ -3,9 +3,6 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: dotnet restore
-    command: dotnet clean && dotnet build
-
 
 vscode:
   extensions:
