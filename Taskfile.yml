@@ -1,0 +1,26 @@
+version: '3'
+
+tasks:
+  init:
+    cmds:
+      - dotnet new console -n app -o app
+      - gp open app/Program.cs
+  run:
+    dir: app
+    cmds:
+      - dotnet run
+  build:
+    dir: app
+    cmds:
+      - dotnet build
+  fmt:
+    dir: app
+    cmds:
+      - dotnet format
+  clean:
+    dir: app
+    cmds:
+      - dotnet clean
+  clear:
+    cmds:
+      - rm -rf app
